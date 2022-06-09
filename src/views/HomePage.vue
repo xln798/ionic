@@ -1,27 +1,38 @@
+
+<!--
+ * @Description:
+ * @version:
+ * @Author:
+ * @Date: 2022-05-12 02:14:52
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2022-06-08 16:15:52
+-->
 <template>
   <ion-page>
-    <ion-header :translucent="true">
+    <!-- <ion-header :translucent="true">
       <ion-toolbar>
         <ion-title>Blank</ion-title>
       </ion-toolbar>
     </ion-header>
-    
+
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
           <ion-title size="large">Blank</ion-title>
         </ion-toolbar>
       </ion-header>
-    
+
       <div id="container">
         <strong>Ready to create an app?</strong>
         <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
       </div>
-    </ion-content>
+    </ion-content> -->
+    <iframe id="desktop" style="border: none" width="100%" height="100%" src="http://10.100.124.100:3000/#/login"></iframe>
   </ion-page>
 </template>
 
 <script lang="ts">
+/* eslint-disable vue/no-unused-components */
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
@@ -40,7 +51,7 @@ export default defineComponent({
 <style scoped>
 #container {
   text-align: center;
-  
+
   position: absolute;
   left: 0;
   right: 0;
@@ -56,9 +67,9 @@ export default defineComponent({
 #container p {
   font-size: 16px;
   line-height: 22px;
-  
+
   color: #8c8c8c;
-  
+
   margin: 0;
 }
 
